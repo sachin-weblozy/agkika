@@ -10,19 +10,19 @@
       <link href='media/font/Domestic_Manners.ttf' rel='stylesheet' type='text/css'>
       <title>Agkika</title>
       <link href="style.css" rel="stylesheet">
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
    </head>
    <body>
       <div id="root">
-         <section class="main">
-            <div class="container">
+         <section class="main" style="min-height: 100%;">
+            <div class="container twoimgs">
                <header class="container">
                   <div class="header-title">
                      <a href="/"><img src="media/logo.d64dd8c15048d7c70e1587980c4bf698.svg" alt=""></a>
                      <h1>In the books of Agkika</h1>
                   </div>
                </header>
-               <div class="hero">
+               <div class="hero" style="margin-bottom: 10px;">
                   <div class="navbar">
                      <ul>
                         <a href="/">
@@ -158,209 +158,173 @@
                         <p>At Agkika, we enable finance professionals to outsource the client servicing operations and supercharge growth. Our Intelligent Delivery Model takes care of the heavy lifting, including niche areas and services and advisory related operations so you can devote energy to client interaction and client acquisition, focus on big picture strategy and catapult your firm and your clients' businesses to the next level.</p>
                      </div>
                      <div class="service hide" id="traditional-service">
-                        <div class="traditional-services-wrapper">
-                           <div class="title-with-image">
-                              <img src="media/service-left.png" alt="">
-                              <h4>Bookkeeping Services </h4>
-                           </div>
-                           <div class="pragraph">
-                              <h4>(We handle the daily accounting busywork so you can focus on advising)</h4>
-                              <p>• Transaction recording (Capturing daily transactions soyou don't have to sweat the small stuff)</p>
-                              <p>• General ledger maintenance (Keeping the books squeaky clean and audit-ready)</p>
-                              <p>• Bank reconciliations (Aligning your records with bank statements, so you avoid surprises)</p>
-                              <p>• Monthly reporting (Summarizing key activities into user-friendly reports for insights)</p>
-                           </div>
-                        </div>
-                        <div class="traditional-services-wrapper">
-                           <div class="title-with-image">
-                              <img src="media/service-left.png" alt="">
-                              <h4>Payroll Services  </h4>
-                           </div>
-                           <div class="pragraph">
-                              <h4>(We fully manage payroll from paycheck to compliance so you avoid HR headaches)</h4>
-                              <p>• Payroll processing (Accurately calculating pay amounts and deductions even for complex situations)</p>
-                              <p>• Tax calculations (Determining payroll tax liabilities to minimize costly errors and penalties)</p>
-                              <p>• Payslip issuance (Flawlessly distributing pay slips to delight your employees)</p>
-                              <p>• Payroll tax filing (Timely submitting returns and payments to HMRC to avoid painful non-compliance)</p>
-                              <p>• Compliance management (Proactively staying updated on evolving payroll regulations so you can sleep easy)</p>
-                           </div>
-                        </div>
-                        <div class="traditional-services-wrapper">
-                           <div class="title-with-image">
-                              <img src="media/service-left.png" alt="">
-                              <h4>Accounting Services </h4>
-                           </div>
-                           <div class="pragraph">
-                              <h4>(We handle routine accounting work from transactions to reporting so you can focus on advising)</h4>
-                              <p>• Journal entries (Accurately recording non-cash transactions to provide a complete financial picture)</p>
-                              <p>• Financial statement preparation (Skillfully drafting BS, P&amp;L, CF statements that provide true insight)</p>
-                              <p>• Management reporting (Preparing analytics and insights tailored to decision-making needs)</p>
-                              <p>• Forecasting and budgeting (Projecting future financials based on historicals and growth plans)</p>
-                              <p>• KPI monitoring (Tracking key accounting metrics to identify performance issues and opportunities)</p>
-                           </div>
-                        </div>
-                        <div class="traditional-services-wrapper">
-                           <div class="title-with-image">
-                              <img src="media/service-left.png" alt="">
-                              <h4>Tax Services </h4>
-                           </div>
-                           <div class="pragraph">
-                              <h4>(Our expertise handles tax compliance filing and optimization to minimize liability legally)</h4>
+                        <ul class="m-d expand-list">
+                           <li data-md-content="200">
+                              <label name="tab" for="tab1" tabindex="-1" class="tab_lab" role="tab"><h4><img src="media/service-left.png" alt=""> Bookkeeping Services</h4></label>
+                              <input type="checkbox" checked class="tab" id="tab1" tabindex="0" />
+                              <div class="content">
+                                 <h4>(We handle the daily accounting busywork so you can focus on advising)</h4>
+                                 <p>• Transaction recording (Capturing daily transactions soyou don't have to sweat the small stuff)</p>
+                                 <p>• General ledger maintenance (Keeping the books squeaky clean and audit-ready)</p>
+                                 <p>• Bank reconciliations (Aligning your records with bank statements, so you avoid surprises)</p>
+                                 <p>• Monthly reporting (Summarizing key activities into user-friendly reports for insights)</p>
+                              </div>
+                            </li>
+                            <li data-md-content="300">
+                                 <label name="tab" for="tab2" tabindex="-1" class="tab_lab" role="tab"><h4><img src="media/service-left.png" alt=""> Payroll Services</h4></label>
+                                 <input type="checkbox" class="tab" id="tab2" tabindex="0" />
+                                 <div class="content">
+                                    <h4>(We fully manage payroll from paycheck to compliance so you avoid HR headaches)</h4>
+                                    <p>• Payroll processing (Accurately calculating pay amounts and deductions even for complex situations)</p>
+                                    <p>• Tax calculations (Determining payroll tax liabilities to minimize costly errors and penalties)</p>
+                                    <p>• Payslip issuance (Flawlessly distributing pay slips to delight your employees)</p>
+                                    <p>• Payroll tax filing (Timely submitting returns and payments to HMRC to avoid painful non-compliance)</p>
+                                    <p>• Compliance management (Proactively staying updated on evolving payroll regulations so you can sleep easy)</p>
+                                </div>
+                            </li>
+                            <li data-md-content="400">
+                                 <label name="tab" for="tab3" tabindex="-1" class="tab_lab" role="tab"><h4><img src="media/service-left.png" alt=""> Accounting Services</h4></label>
+                                 <input type="checkbox" class="tab" id="tab3" tabindex="0" />
+                                 <div class="content">
+                                    <h4>(We handle routine accounting work from transactions to reporting so you can focus on advising)</h4>
+                                    <p>• Journal entries (Accurately recording non-cash transactions to provide a complete financial picture)</p>
+                                    <p>• Financial statement preparation (Skillfully drafting BS, P&amp;L, CF statements that provide true insight)</p>
+                                    <p>• Management reporting (Preparing analytics and insights tailored to decision-making needs)</p>
+                                    <p>• Forecasting and budgeting (Projecting future financials based on historicals and growth plans)</p>
+                                    <p>• KPI monitoring (Tracking key accounting metrics to identify performance issues and opportunities)</p>
+                                 </div>
+                           </li>
+                           <li data-md-content="500">
+                              <label name="tab" for="tab4" tabindex="-1" class="tab_lab" role="tab"><h4><img src="media/service-left.png" alt=""> Tax Services</h4></label>
+                              <input type="checkbox" class="tab" id="tab4" tabindex="0" />
+                              <div class="content">
+                                 <h4>(Our expertise handles tax compliance filing and optimization to minimize liability legally)</h4>
                               <p>• Tax planning (Applying our know-how to legally minimize tax liability)</p>
                               <p>• Tax computation (Correctly calculating tax owed to avoid penalties)</p>
                               <p>• Return filing (Efficiently preparing and submitting returns to meet deadlines)</p>
                               <p>• HMRC communication (Tactfully interacting with tax authorities)</p>
                               <p>• Advisory on direct and indirect taxes (Providing guidance on complex tax codes and filings)</p>
-                           </div>
-                        </div>
-                        <div class="traditional-services-wrapper">
-                           <div class="title-with-image">
-                              <img src="media/service-left.png" alt="">
-                              <h4>Audit Support </h4>
-                           </div>
-                           <div class="pragraph">
-                              <h4>(We adeptly facilitate audits by handling preparation and queries)</h4>
-                              <p>• Gathering paperwork (Diligently compiling supporting documents needed to satisfy auditors)</p>
-                              <p>• Invoice pulling (Swiftly extracting invoice data required for audit sampling)</p>
-                              <p>• Responding to queries (Promptly answering auditor information requests)</p>
-                              <p>• Documentation maintenance (Meticulously organizing records so audits go smoothly)</p>
-                           </div>
-                        </div>
-                        <div class="traditional-services-wrapper">
-                           <div class="title-with-image">
-                              <img src="media/service-left.png" alt="">
-                              <h4>Tax Services </h4>
-                           </div>
-                           <div class="pragraph">
-                              <h4>(Our expertise handles tax compliance filing and optimization to minimize liability legally)</h4>
-                              <p>• Tax planning (Applying our know-how to legally minimize tax liability)</p>
-                              <p>• Tax computation (Correctly calculating tax owed to avoid penalties)</p>
-                              <p>• Return filing (Efficiently preparing and submitting returns to meet deadlines)</p>
-                              <p>• HMRC communication (Tactfully interacting with tax authorities)</p>
-                              <p>• Advisory on direct and indirect taxes (Providing guidance on complex tax codes and filings)</p>
-                           </div>
-                        </div>
+                              </div>
+                           </li>
+                           <li data-md-content="600">
+                              <label name="tab" for="tab5" tabindex="-1" class="tab_lab" role="tab"><h4><img src="media/service-left.png" alt=""> Audit Support</h4></label>
+                              <input type="checkbox" class="tab" id="tab5" tabindex="0" />
+                              <div class="content">
+                                 <h4>(We adeptly facilitate audits by handling preparation and queries)</h4>
+                                 <p>• Gathering paperwork (Diligently compiling supporting documents needed to satisfy auditors)</p>
+                                 <p>• Invoice pulling (Swiftly extracting invoice data required for audit sampling)</p>
+                                 <p>• Responding to queries (Promptly answering auditor information requests)</p>
+                                 <p>• Documentation maintenance (Meticulously organizing records so audits go smoothly)</p>
+                              </div>
+                           </li>
+                        </ul>
                      </div>
                      <div class="service hide" id="niche-service">
-                        <div class="traditional-services-wrapper">
-                           <div class="title-with-image">
-                              <img src="media/service-left.png" alt="">
-                              <h4>Forecasting and Planning </h4>
-                           </div>
-                           <div class="pragraph">
-                              <h4>(We expertly build models and uncover data-driven insights to guide decisions)</h4>
-                              <p>• Transaction recording (Capturing daily transactions soyou don't have to sweat the small stuff)</p>
-                              <p>• Data gathering (Identifying and compiling pertinent inputs to drive reliable models)</p>
-                              <p>• Model building (Developing customized forecasting models leveraging statistical best practices)</p>
-                              <p>• Forecasting analysis (Generating multi-scenario projections based on growth assumptions)</p>
-                              <p>• Insight reporting (Summarizing key modeled takeaways into memos tailored to decision needs)</p>
-                           </div>
-                        </div>
-                        <div class="traditional-services-wrapper">
-                           <div class="title-with-image">
-                              <img src="media/service-left.png" alt="">
-                              <h4>Budgeting</h4>
-                           </div>
-                           <div class="pragraph">
-                              <h4>(Our specialized team creates practical budgets aligned to your clients' business goals)</h4>
-                              <p>• Budget modeling (Building flexible and collaborative models focused on business objectives)</p>
-                              <p>• Variance analysis (Determining budget deviations and thoughtfully identifying root causes)</p>
-                              <p>• Cost optimization (Pinpointing savings opportunities from labour to inventories to discretionary spend)</p>
-                              <p>• Performance reporting (Monitoring budget vs. actuals and presenting actionable insights)</p>
-                           </div>
-                        </div>
-                        <div class="traditional-services-wrapper">
-                           <div class="title-with-image">
-                              <img src="media/service-left.png" alt="">
-                              <h4>Business Modeling </h4>
-                           </div>
-                           <div class="pragraph">
-                              <h4>(We meticulously model different scenarios to provide data-driven decision support)</h4>
-                              <p>• Model conceptualization (Determining appropriate modeling approaches that provide robust evaluation)</p>
-                              <p>• Data analysis (Thoroughly examining inputs and assumptions to ensure relevance and accuracy)</p>
-                              <p>• Model building (Constructing customized models leveraging statistical and analytical best practices)</p>
-                              <p>• Insight reporting (Summarizing model outputs into memos outlining data-driven pros and cons for key decisions)</p>
-                           </div>
-                        </div>
-                        <div class="traditional-services-wrapper">
-                           <div class="title-with-image">
-                              <img src="media/service-left.png" alt="">
-                              <h4>CFO Services </h4>
-                           </div>
-                           <div class="pragraph">
-                              <h4>(We provide strategic leadership, analysis and reporting tailored to growth objectives)</h4>
-                              <p>• Strategic planning (Partnering to craft financial strategies aligned to long-term goals)</p>
-                              <p>• Financial analysis (Studying performance trends and benchmarks to identify opportunities and issues)</p>
-                              <p>• Management reporting (Summarizing insights into user-friendly dashboards and reports to drive decisions)</p>
-                              <p>• Growth strategy (Formulating data-driven growth roadmap focused on profitability and scalability)</p>
-                           </div>
-                        </div>
-                        <div class="traditional-services-wrapper">
-                           <div class="title-with-image">
-                              <img src="media/service-left.png" alt="">
-                              <h4>Transfer Pricing</h4>
-                           </div>
-                           <div class="pragraph">
-                              <h4>(Our expertise maintains documentation, ensures compliance, and optimizes pricing approaches)</h4>
-                              <p>• Documentation maintenance (Keeping policies and supporting materials current and audit-ready)</p>
-                              <p>• Compliance management (Closely monitoring filings and obligations across jurisdictions to avoid penalties)</p>
-                              <p>• Policy optimization (Improving pricing approach by analyzing profitability impacts and industry norms)</p>
-                              <p>• Return filing (Efficiently handling return prep and submission across jurisdictions)</p>
-                           </div>
-                        </div>
-                        <div class="traditional-services-wrapper">
-                           <div class="title-with-image">
-                              <img src="media/service-left.png" alt="">
-                              <h4>Startup Advisory </h4>
-                           </div>
-                           <div class="pragraph">
-                              <h4>(We handle tedious modeling, forecasting, planning and setup so you focus on securing funding)</h4>
-                              <p>• Pitch deck creation (Developing slick, investor-oriented presentations to highlight potential)</p>
-                              <p>• Financial modeling (Building comprehensive models to credibly quantify valuation and returns)</p>
-                              <p>• Accounting setup (Establishing scalable books and processes tailored to the venture's needs)</p>
-                              <p>• Investor reporting (Providing meticulous reports to update investors and support capital requests)</p>
-                           </div>
-                        </div>
-                        <div class="traditional-services-wrapper">
-                           <div class="title-with-image">
-                              <img src="media/service-left.png" alt="">
-                              <h4>Forex Management  </h4>
-                           </div>
-                           <div class="pragraph">
-                              <h4>(Our specialized team helps manage currency risk and exposures to optimize profitability)</h4>
-                              <p>• Exposure analysis (Determining forex risk related to cross-border transactions and flows)</p>
-                              <p>• Hedging execution (Implementing tailored risk management strategies aligned to risk tolerance)</p>
-                              <p>• Rate tracking (Monitoring exchange rate fluctuations to identify impacts and opportunities)</p>
-                              <p>• Treasury operations (Managing forex transactions while ensuring compliance and controls)</p>
-                           </div>
-                        </div>
-                        <div class="traditional-services-wrapper">
-                           <div class="title-with-image">
-                              <img src="media/service-left.png" alt="">
-                              <h4>Treasury Management </h4>
-                           </div>
-                           <div class="pragraph">
-                              <h4>(We optimize cash flow, working capital and investments to improve financial health)</h4>
-                              <p>• Cash flow analysis (Studying historical cash flow to forecast future needs)</p>
-                              <p>• Investment optimization (Improving returns on holdings through analysis of risks, returns and liquidity)</p>
-                              <p>• Working capital optimization (Optimizing current asset/liability mix to support growth with minimal risk)</p>
-                              <p>• Liquidity planning (Forecasting future cash position and financing needs based on projections)</p>
-                           </div>
-                        </div>
-                        <div class="traditional-services-wrapper">
-                           <div class="title-with-image">
-                              <img src="media/service-left.png" alt="">
-                              <h4>Debtor/Creditor Management  </h4>
-                           </div>
-                           <div class="pragraph">
-                              <h4>(We enhance collections, payments and terms to improve financial position)</h4>
-                              <p>• Collections strategy (Improving debtor payment performance through analytics and tailored outreach)</p>
-                              <p>• Payables optimization (Optimizing vendor payments based on discounts, risks and cash flow)</p>
-                              <p>• Days sales outstanding (Monitoring receivables cycles to reduce drag on cash flow)</p>
-                              <p>• Working capital optimization (Improving working capital ratios through efficient capital deployment)</p>
-                              <p>• Following up with debtors (Tenaciously yet tactfully contacting to collect on outstanding dues)</p>
-                           </div>
-                        </div>
+                        <ul class="m-d expand-list">
+                           <li data-md-content="200">
+                              <label name="tab" for="tab1" tabindex="-1" class="tab_lab" role="tab"><h4><img src="media/service-left.png" alt=""> Forecasting and Planning</h4></label>
+                              <input type="checkbox" checked class="tab" id="tab1" tabindex="0" />
+                              <div class="content">
+                                 <h4>(We expertly build models and uncover data-driven insights to guide decisions)</h4>
+                                 <p>• Transaction recording (Capturing daily transactions soyou don't have to sweat the small stuff)</p>
+                                 <p>• Data gathering (Identifying and compiling pertinent inputs to drive reliable models)</p>
+                                 <p>• Model building (Developing customized forecasting models leveraging statistical best practices)</p>
+                                 <p>• Forecasting analysis (Generating multi-scenario projections based on growth assumptions)</p>
+                                 <p>• Insight reporting (Summarizing key modeled takeaways into memos tailored to decision needs)</p>
+                              </div>
+                            </li>
+                            <li data-md-content="300">
+                                 <label name="tab" for="tab2" tabindex="-1" class="tab_lab" role="tab"><h4><img src="media/service-left.png" alt=""> Budgeting</h4></label>
+                                 <input type="checkbox" class="tab" id="tab2" tabindex="0" />
+                                 <div class="content">
+                                    <h4>(Our specialized team creates practical budgets aligned to your clients' business goals)</h4>
+                                    <p>• Budget modeling (Building flexible and collaborative models focused on business objectives)</p>
+                                    <p>• Variance analysis (Determining budget deviations and thoughtfully identifying root causes)</p>
+                                    <p>• Cost optimization (Pinpointing savings opportunities from labour to inventories to discretionary spend)</p>
+                                    <p>• Performance reporting (Monitoring budget vs. actuals and presenting actionable insights)</p>
+                                </div>
+                            </li>
+                            <li data-md-content="400">
+                                 <label name="tab" for="tab3" tabindex="-1" class="tab_lab" role="tab"><h4><img src="media/service-left.png" alt=""> Business Modeling</h4></label>
+                                 <input type="checkbox" class="tab" id="tab3" tabindex="0" />
+                                 <div class="content">
+                                    <h4>(We meticulously model different scenarios to provide data-driven decision support)</h4>
+                                    <p>• Model conceptualization (Determining appropriate modeling approaches that provide robust evaluation)</p>
+                                    <p>• Data analysis (Thoroughly examining inputs and assumptions to ensure relevance and accuracy)</p>
+                                    <p>• Model building (Constructing customized models leveraging statistical and analytical best practices)</p>
+                                    <p>• Insight reporting (Summarizing model outputs into memos outlining data-driven pros and cons for key decisions)</p>
+                                 </div>
+                           </li>
+                           <li data-md-content="500">
+                              <label name="tab" for="tab4" tabindex="-1" class="tab_lab" role="tab"><h4><img src="media/service-left.png" alt=""> CFO Services</h4></label>
+                              <input type="checkbox" class="tab" id="tab4" tabindex="0" />
+                              <div class="content">
+                                 <h4>(We provide strategic leadership, analysis and reporting tailored to growth objectives)</h4>
+                                 <p>• Strategic planning (Partnering to craft financial strategies aligned to long-term goals)</p>
+                                 <p>• Financial analysis (Studying performance trends and benchmarks to identify opportunities and issues)</p>
+                                 <p>• Management reporting (Summarizing insights into user-friendly dashboards and reports to drive decisions)</p>
+                                 <p>• Growth strategy (Formulating data-driven growth roadmap focused on profitability and scalability)</p>
+                              </div>
+                           </li>
+                           <li data-md-content="600">
+                              <label name="tab" for="tab5" tabindex="-1" class="tab_lab" role="tab"><h4><img src="media/service-left.png" alt=""> Transfer Pricing</h4></label>
+                              <input type="checkbox" class="tab" id="tab5" tabindex="0" />
+                              <div class="content">
+                                 <h4>(Our expertise maintains documentation, ensures compliance, and optimizes pricing approaches)</h4>
+                                 <p>• Documentation maintenance (Keeping policies and supporting materials current and audit-ready)</p>
+                                 <p>• Compliance management (Closely monitoring filings and obligations across jurisdictions to avoid penalties)</p>
+                                 <p>• Policy optimization (Improving pricing approach by analyzing profitability impacts and industry norms)</p>
+                                 <p>• Return filing (Efficiently handling return prep and submission across jurisdictions)</p>
+                              </div>
+                           </li>
+                           <li data-md-content="700">
+                              <label name="tab" for="tab6" tabindex="-1" class="tab_lab" role="tab"><h4><img src="media/service-left.png" alt=""> Startup Advisory</h4></label>
+                              <input type="checkbox" class="tab" id="tab6" tabindex="0" />
+                              <div class="content">
+                                 <h4>(We handle tedious modeling, forecasting, planning and setup so you focus on securing funding)</h4>
+                                 <p>• Pitch deck creation (Developing slick, investor-oriented presentations to highlight potential)</p>
+                                 <p>• Financial modeling (Building comprehensive models to credibly quantify valuation and returns)</p>
+                                 <p>• Accounting setup (Establishing scalable books and processes tailored to the venture's needs)</p>
+                                 <p>• Investor reporting (Providing meticulous reports to update investors and support capital requests)</p>
+                              </div>
+                           </li>
+                           <li data-md-content="800">
+                              <label name="tab" for="tab7" tabindex="-1" class="tab_lab" role="tab"><h4><img src="media/service-left.png" alt=""> Forex Management</h4></label>
+                              <input type="checkbox" class="tab" id="tab7" tabindex="0" />
+                              <div class="content">
+                                 <h4>(Our specialized team helps manage currency risk and exposures to optimize profitability)</h4>
+                                 <p>• Exposure analysis (Determining forex risk related to cross-border transactions and flows)</p>
+                                 <p>• Hedging execution (Implementing tailored risk management strategies aligned to risk tolerance)</p>
+                                 <p>• Rate tracking (Monitoring exchange rate fluctuations to identify impacts and opportunities)</p>
+                                 <p>• Treasury operations (Managing forex transactions while ensuring compliance and controls)</p>
+                              </div>
+                           </li>
+                           
+                           <li data-md-content="900">
+                              <label name="tab" for="tab7" tabindex="-1" class="tab_lab" role="tab"><h4><img src="media/service-left.png" alt=""> Treasury Management</h4></label>
+                              <input type="checkbox" class="tab" id="tab7" tabindex="0" />
+                              <div class="content">
+                                 <h4>(We optimize cash flow, working capital and investments to improve financial health)</h4>
+                                 <p>• Cash flow analysis (Studying historical cash flow to forecast future needs)</p>
+                                 <p>• Investment optimization (Improving returns on holdings through analysis of risks, returns and liquidity)</p>
+                                 <p>• Working capital optimization (Optimizing current asset/liability mix to support growth with minimal risk)</p>
+                                 <p>• Liquidity planning (Forecasting future cash position and financing needs based on projections)</p>
+                              </div>
+                           </li>
+                           
+                           <li data-md-content="1000">
+                              <label name="tab" for="tab7" tabindex="-1" class="tab_lab" role="tab"><h4><img src="media/service-left.png" alt=""> Debtor/Creditor Management</h4></label>
+                              <input type="checkbox" class="tab" id="tab7" tabindex="0" />
+                              <div class="content">
+                                 <h4>(We enhance collections, payments and terms to improve financial position)</h4>
+                                 <p>• Collections strategy (Improving debtor payment performance through analytics and tailored outreach)</p>
+                                 <p>• Payables optimization (Optimizing vendor payments based on discounts, risks and cash flow)</p>
+                                 <p>• Days sales outstanding (Monitoring receivables cycles to reduce drag on cash flow)</p>
+                                 <p>• Working capital optimization (Improving working capital ratios through efficient capital deployment)</p>
+                                 <p>• Following up with debtors (Tenaciously yet tactfully contacting to collect on outstanding dues)</p>
+                              </div>
+                           </li>
+                        </ul>
                      </div>
                      <div class="team hide" id="the-people-who-power-agkika">
                         <p>At Agkika, we've assembled a talented team of go-getters from diverse backgrounds who thrive on teamwork, out-of-the-box thinking, and making professional services exciting. Our creative crew blends expertise with unconventional flair to cook up groundbreaking solutions across departments. From customer service and finance to tax and compliance, we've got the skills to transform your business. Our dynamic team of specialists adds the secret sauce that makes Agkika's offerings innovative and unique. We're a powerhouse of possibility fueled by collaboration. Let our brigade of all-star professionals reinvent your processes and create new possibilities.</p>
@@ -425,6 +389,7 @@
       </div>
    </body>
    <script>
+      
       $('.abouthead').click(function(){
          $('#aboutsubmenu').removeClass('hide');
          $('#liabilitysubmenu,#teamsubmenu,#servicesubmenu').addClass('hide');
