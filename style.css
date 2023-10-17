@@ -91,7 +91,8 @@ ul {
 	}
 }
 .leftimg{
-	background-image: url(media/img/left.webp);
+	background-image: url(media/img/background.webp);
+	background-size: 100%;
 	left: 0;
 	z-index:0;
 }
