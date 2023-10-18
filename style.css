@@ -2613,8 +2613,8 @@ footer .container {
 
 footer .container .footer-row {
 	display: flex;
-	padding-top: 1.30208vw;
-	padding-top: calc(25vw/var(--context));
+	/* padding-top: 1.30208vw; */
+	/* padding-top: calc(25vw/var(--context)); */
 	position: relative
 }
 
